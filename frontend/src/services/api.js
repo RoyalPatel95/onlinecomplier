@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ✅ Axios instance
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://onlinecomplier.onrender.com/api",
   timeout: 15000,
 });
 
