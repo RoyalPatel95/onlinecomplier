@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 // ✅ CORS allow frontend (Vite default ports)
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://online-complier.netlify.app",
     credentials: true,
   })
 );
