@@ -1,0 +1,82 @@
+/* ContactDeveloper.css */
+
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e272e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-section h3 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: #34495e;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  margin: 5px 0 15px;
+}
+
+.contact-section a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077cc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    font-size: 1.5rem;
+    gap: 15px;
+  }
+}

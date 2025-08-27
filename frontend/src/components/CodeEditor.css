@@ -1,0 +1,59 @@
+.main-container {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+
+/* Left Half - Editor */
+.left-editor {
+  flex: 1;
+  border-right: 1px solid #ddd;
+}
+
+/* Right Half - Split Vertically */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+/* Input Box - Top Half */
+.input-box {
+  flex: 1;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box textarea {
+  flex: 1;
+  resize: none;
+  padding: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+}
+
+/* Output Box - Bottom Half */
+.output-box {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.output-box pre {
+  flex: 1;
+  margin: 0;
+  padding: 8px;
+  background: #eef1f5;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow-y: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,82 @@
+/* About.css */
+
+.about-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1e272e;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+ul li {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.last-updated {
+  margin-top: 40px;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .about-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p, ul li {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,144 @@
+/* General Page Styling */
+.app-container {
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+select.language-selector {
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Main 2-column layout */
+.editor-output-wrapper {
+  display: flex;
+  gap: 16px;
+  height: 70vh;
+}
+
+/* Left: Code Editor */
+.code-editor {
+  flex: 1;
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Right: Input + Output */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input & Output Sections */
+.input-section, .output-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section textarea {
+  flex: 1;
+  resize: none;
+  padding: 8px;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.output-section pre {
+  flex: 1;
+  margin: 0;
+  padding: 8px;
+  background-color: #000000;
+  color: #00ff88;
+  border: 1px solid #666;
+  border-radius: 6px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+
+/* Run Button */
+.run-button {
+  margin-top: 16px;
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.run-button:hover {
+  background-color: #1e40af;
+}
+
+.run-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Footer (optional) */
+footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+/* Terminal (Input + Output Combined) */
+.terminal {
+  flex: 1;
+  padding: 8px;
+  background-color: #000000;
+  color: #00ff88;
+  border: 1px solid #666;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 14px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+/* Optional: blinking cursor effect */
+.terminal .xterm-cursor {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Remove old textarea input section */
+.input-section textarea {
+  display: none;
+}
+
+.input-section textarea {
+  flex: 1;
+  resize: none;
+  margin: 0;padding: 0;
+  font-family: monospace;
+  font-size: 14px;
+  border: 1px solid #666;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #000000;
+}
